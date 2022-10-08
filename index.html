@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marked in browser</title>
+    <script
+      src="https://kit.fontawesome.com/e653c7cf97.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Modak&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contain">
+      <h1 class="title">markdown editor</h1>
+      <div class="container">
+        <div id="editor-container">
+          <h3 class="heading">Editor:</h3>
+
+          <button class="heading" type="button" onclick="myFunction()">
+            <i class="fa-solid fa-clipboard fa-lg"></i>
+          </button>
+          <button class="heading preview" type="button">
+            <i class="fa-solid fa-eye-slash fa-lg"></i>
+          </button>
+          <textarea id="editor" cols="30" rows="5">
+ # markdown editor
+ you can make text **bold** or *ilatic*.
+ ## ordered lists 
+ 1. item1
+ 2. item2
+ 3.</textarea
+          >
+        </div>
+        <div id="editor-container">
+          <h3 class="heading">preview:</h3>
+          <div id="compiled-markdown"></div>
+        </div>
+      </div>
+      <footer>
+        ©2022 Umar Shaikh.
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/shaikh_umar_001/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/umar-shaikh-96b7b31a5/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Shaikh-Umar-Farooq/">
+            <i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
