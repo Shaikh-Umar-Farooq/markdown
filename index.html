@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mark Down Previewer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=Cookie&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="https://img.icons8.com/nolan/64/markdown.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 id="page-header">MarkDown Previewer</h1>
+    </div>
+    <div id="content">
+      <div id="editor-container">
+        <h2 id="editor-label">Editor</h2>
+        <!-- editor updates previewer as typed-->
+        <textarea id="editor">
+# Welcome to the Markdown Previewer!
+
+            </textarea
+        >
+      </div>
+
+      <div id="preview-container">
+        <h2 id="preview-label">Preview</h2>
+        <div id="preview">
+          <!-- the output goes here  -->
+          make changes in the editor to see the output
+        </div>
+      </div>
+    </div>
+    <!-- script tag and marked cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
